@@ -17,12 +17,8 @@ owner:
   # Use the coder's toolbox at http://coderstoolbox.net/string/#!encoding=xml&action=encode&charset=us_ascii to encode your description into XML string
   description:    黄旺鑫
   # Social networking links used in footer. Update and remove as you like.
-  twitter:        huangwangxin
-  facebook:       huangwangxin
+  twitter:        xin963744135
   github:         h1101723183      
-  instagram:      huangwangxin
-  # For Google Authorship https://plus.google.com/authorship
-  google_plus:    https://plus.google.com/u/0/
 
 # Analytics and webmaster tools stuff goes here
 google_analytics:   
