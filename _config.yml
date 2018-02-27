@@ -61,6 +61,10 @@ kramdown:
   entity_output: as_char
   toc_levels: 1..6
   use_coderay: false
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+  input: GFM
+  hard_wrap: false
 
   coderay:
     coderay_line_numbers: 
