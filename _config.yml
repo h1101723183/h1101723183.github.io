@@ -1,30 +1,35 @@
-title:            黄旺鑫的博客
-description:      "黄旺鑫的博客"
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title:  黄旺鑫的博客
+email: 1101723183@qq.com
+description: "博客"
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+#twitter_username: jekyllrb
+github_username:  h1101723183
 logo:             logo.png
-disqus_shortname: huangwangxin
-share:            true
-dropcap:			true
-# Change url to your domain. Leave localhost server or blank when working locally.
-# or use the hint from http://jekyllrb.com/docs/github-pages/ to keep this the same 
-# whether working locally or remotely. Start Jekyll with: jekyll serve --baseurl ''
-url:        	  https://h1101723183.github.io/
+future: true
 
-# Owner/author information
-owner:
-  name:           黄旺鑫
-  avatar:         logo.png
-  email:          1101723183@qq.com
-  # Use the coder's toolbox at http://coderstoolbox.net/string/#!encoding=xml&action=encode&charset=us_ascii to encode your description into XML string
-  description:    黄旺鑫
-  # Social networking links used in footer. Update and remove as you like.
-  twitter:        xin963744135
-  github:         h1101723183      
 
-# Analytics and webmaster tools stuff goes here
-#google_analytics:   
-#google_verify:      
-# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
-#bing_verify:         
+# Build settings
+markdown: kramdown
+theme: jekyll-theme-primer
+plugins:
+  - jekyll-feed
+
 
 # Links to include in footer navigation
 # For external links add external: true
@@ -33,125 +38,123 @@ links:
     url: /
     external: false
     icon: home
-  - title: 精选文章
-    url: /featured
   - title: 归档
     url: /categories
   - title: 关于我
     url: /about
 
-# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-timezone:    Asia/Shanghai
-future:      true
-highlighter: rouge
-markdown:    kramdown
-paginate:    5
+
+
+# 分页
+paginate: 5
 paginate_path: "page:num"
 
-# https://github.com/mojombo/jekyll/wiki/Permalinks
-permalink:   /:categories/:title
-
-kramdown:
-  auto_ids: true
-  entity_output: as_char
-  toc_levels: 1..6
-  smart_quotes: lsquo,rsquo,ldquo,rdquo
-  input: GFM
-  hard_wrap: false
-  footnote_nr: 1
-  use_coderay: false
-  enable_coderay: false
-
-  coderay:
-    coderay_line_numbers: 
-    coderay_line_numbers_start: 1
-    coderay_tab_width: 4
-    coderay_bold_every: 10
-    coderay_css: class
-
-prose:
-  rooturl: '_posts'
-  siteurl: 'https://h1101723183.github.io/'
-  relativeLinks: 'https://h1101723183.github.io/links.jsonp'
-  media: 'images'
-  metadata:
-    _posts:
-      - name: "published"
-        field:
-          label: "Published"
-          element: "checkbox"
-          value: "true"
-      - name: "layout"
-        field:
-          element: "hidden"
-          label: "Layout"
-          value: "post"
-      - name: "title"
-        field:
-          label: "Title"
-          element: "text"
-          value: "An Awesome Headline!"
-      - name: "description"
-        field:
-          element: "text"
-          label: "Description"
-          placeholder: "Enter Post Description"
-      - name: "headline"
-        field:
-          element: "text"
-          label: "beadline"
-          placeholder: "Enter Post Headline"
-      - name: "modified"
-        field:
-          element: "text"
-          label: "Has this page been modified?"
-          placeholder: "YYYY-MM-DD"
-      - name: "categories"
-        field:
-          element: "multiselect"
-          label: "Add categories"
-          placeholder: "Choose categories"
-          value: personal
-          options:
-            - name: "Personal"
-              value: personal
-            - name: "Engineering"
-              value: engineering
-            - name: "Physics"
-              value: physics
-            - name: "Psychology"
-              value: psychology
-            - name: "Interesting"
-              value: interesting
-            - name: "Web-Development"
-              value: webdevelopment
-          alterable: true
-      - name: "tags"
-        field:
-          element: "text"
-          label: "Tags"
-          placeholder: "Enter tags, separated by spaces"
-      - name: "imagefeature"
-        field:
-          element: "text"
-          label: "Featured Image"
-          placeholder: "somefile.jpg"
-      - name: "mathjax"
-        field:
-          element: "checkbox"
-          label: "MathJax"
-          value: false
-      - name: "featured"
-        field:
-          element: "checkbox"
-          label: "Featured?"
-          value: false
-      - name: "comments"
-        field:
-          element: "checkbox"
-          label: "Comments"
-          value: false
 
 
-include: [".htaccess"]
-exclude: ["lib", "config.rb", "Gemfile", "Capfile", "Gemfile.lock", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules"]
+
+# Site Source, Change the directory where Jekyll will read files
+
+# source: DIR
+
+
+
+
+# Site Destination, Change the directory where Jekyll will write files
+
+# destination: DIR
+
+
+
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
+
+
+
+
+# Force inclusion of directories and/or files in the conversion. 
+# .htaccess is a good example since dotfiles are excluded by default.
+
+# include:
+#  - 
+
+
+
+
+# Keep files
+# When clobbering the site destination, keep the selected files. 
+# Useful for files that are not generated by jekyll; 
+# e.g. files or assets that are generated by your build tool. 
+# The paths are relative to the destination.
+
+# keep_files: 
+#  -
+
+
+
+
+# Time Zone
+# Set the time zone for site generation. 
+# This sets the TZ environment variable, which Ruby uses to handle time and date creation and manipulation. 
+# Any entry from the IANA Time Zone Database is valid, e.g. America/New_York. 
+# A list of all available values can be found here:
+# https://en.wikipedia.org/wiki/List_of_tz_database_time_zones. 
+# When serving on a local machine, the default time zone is set by your operating system. 
+# But when served on a remote host/server, the default time zone depends on the server's setting or location.
+timezone: Asia/Shanghai
+
+
+# Encoding
+encoding: utf-8
+
+
+# Drafts，是否显示草稿
+# show_drafts: false 
+
+
+# Future, Publish posts or collection documents with a future date.
+# future: true
+
+# Unpublished, 标记为未发布的帖子
+# unpublished: BOOL
+
+# Incremental build 
+# 启用实验增量构建功能。
+# 增量构建仅重新构建已更改的帖子和页面，从而显着改善大型网站的性能，但也可能在某些情况下破坏网站生成。
+# incremental: BOOL
+
+# Local Server Port， Listen on the given port.
+# 本地服务器端口
+port: 4001
+
+# Local Server Hostname
+# 本地服务器主机名
+# host: 127.0.0.1
+
+# 该defaults键包含一组范围/值对，用于定义应为特定文件路径设置哪些默认值，以及可选的文件类型。
+# 假设您想要将默认布局添加到网站中的所有页面和帖子中。你可以将它添加到你的_config.yml文件中：
+# 在这里，我们正在确定values路径中存在的任何文件scope。
+# 由于路径设置为空字符串，因此它将应用于项目中的所有文件。
+# 您可能不希望为项目中的每个文件设置布局 
+# 例如，像css文件 - 因此您也可以type在该项下指定一个值scope。
+# 这只会设置类型为的文件的布局posts。
+# 不同类型的提供给你的pages，posts，drafts或在您的网站的任何集合。
+# 虽然type是可选的，但您必须为path创建scope/values对时指定一个值。
+
+ # defaults:
+ #   -
+ #     scope:
+ #       path: "" # an empty string here means all files in the project
+ #       type: "posts" # previously `post` in Jekyll 2.2.
+ #     values:
+ #       layout: "default"

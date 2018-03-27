@@ -1,0 +1,120 @@
+body {
+  display: flex;
+  display: -webkit-flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.site-content {
+  flex: 1;
+}
+
+
+.site-content .page-content {
+	margin: 0 auto;
+	padding: 0 0 5rem;
+	margin-top: 50px;
+}
+
+.page-content > div:not(.page-title) {
+	margin: 0 auto;
+	padding-left: 1.875rem;
+	padding-right: 1.875rem;
+}
+
+.page-content > div:not(.page-title) a {
+	text-decoration: none;
+}
+
+.page-content > div:not(.page-title) a,
+.page-content > div:not(.page-title) code {
+	color: #e51843;
+}
+
+.page-content > div:not(.page-title) ul,
+.page-content > div:not(.page-title) ol {
+	padding-left: 1.25rem;
+	font-size: 1.125rem;
+}
+
+.page-content > div:not(.page-title) h1, 
+.page-content > div:not(.page-title) h2,
+.page-content > div:not(.page-title) h3,
+.page-content > div:not(.page-title) h4,
+.page-content > div:not(.page-title) h5,
+.page-content > div:not(.page-title) h6 {
+	font-weight: bold;
+}
+
+.page-content > div:not(.page-title) h1, 
+.page-content > div:not(.page-title) h2,
+.page-content > div:not(.page-title) h3,
+.page-content > div:not(.page-title) h4,
+.page-content > div:not(.page-title) h5,
+.page-content > div:not(.page-title) h6,
+.page-content > div:not(.page-title) ul,
+.page-content > div:not(.page-title) ol,
+.page-content > div:not(.page-title) blockquote,
+.page-content > div:not(.page-title) pre,
+.page-content > div:not(.page-title) hr {
+	max-width: 56.25rem;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+.page-content > div:not(.page-title) p {
+	margin: 0 auto 2em auto;
+	max-width: 56.25rem;
+	font-size: 1.125rem;
+}
+
+
+.post-list {
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}
+
+.post-list li {
+	padding: 8px 0;
+	border-bottom: 1px solid #ccc;
+	border-bottom: 1px solid rgba(0, 0, 0, .1)
+	*zoom: 1;
+}
+
+.post-list li:after,.post-list li:before {
+    display: table;
+    line-height: 0;
+    content: "";
+}
+
+.post-list li:after {
+    clear: both;
+}
+
+.post-list a>span {
+    float: right;
+}
+
+.post-list .entry-date {
+    display: none;
+    font-size: 14px;
+    text-transform: uppercase;
+    float: right;
+}
+
+@media only screen and (min-width:48em) {
+    .post-list .entry-date {
+        display: inline;
+    }
+}
+
+
+
+
+
+
+
+
+

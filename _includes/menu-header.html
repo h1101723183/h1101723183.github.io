@@ -1,0 +1,29 @@
+<header id="header" class="post-header-simple">
+  <div class="post-menu-header-simple">
+    <a class="blog-logo" href="{{ site.url }}">
+      <img src="{{ site.url }}/images/{{ site.logo }}" alt="Blog Logo" />
+    </a>
+
+    <div class="blog-menu">
+      <div class="mobile-menu show-for-small">
+        <a href="#"><i class="fa fa-bars"></i></a>
+      </div>
+
+      <ul class="menu">
+        <li class="mobile-close-btn show-for-small text-right">
+            <a href="#"><i class="fa fa-times"></i></a>
+        </li>
+        {% for link in site.links %}
+          <li>
+            {% if link.external %}
+              <a href="{{ link.url }}">{{ link.title }}</a>
+            {% else %}
+              <a href="{{ site.url }}{{ link.url }}">{{ link.title }}</a>
+            {% endif %} 
+          </li>
+        {% endfor %}            
+          <li><a href="{{ site.url }}/feed.xml" title="Atom/RSS feed"><i class="icon-rss"></i> 订阅</a></li>
+      </ul>
+    </div>
+  </div>
+</header>

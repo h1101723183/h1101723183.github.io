@@ -1,14 +1,14 @@
 'use strict';
 
-var notepad = (function ($) {
+var homeAction = (function ($) {
 
-    var indexPostClass = '.notepad-index-post',
-        mobileMenuButton = '.notepad-mobile-menu a',
-        mobileMenuCloseButton = '.notepad-mobile-close-btn',
-        mainMenu = '.notepad-menu',
+    var indexPostClass = '.index-post',
+        mobileMenuButton = '.mobile-menu a',
+        mobileMenuCloseButton = '.mobile-close-btn',
+        mainMenu = '.menu',
         bgCheckClass = '.bg-check',
         postBgImages = '.bg-img img',
-        postCoverImg = '.notepad-post-header .bg-img',
+        postCoverImg = '.post-header .bg-img',
 
     // post animations on homepage
     indexPostAnimate = function () {
@@ -73,5 +73,5 @@ var notepad = (function ($) {
 })(jQuery);
 
 (function () {
-    notepad.init();
+    homeAction.init();
 })();

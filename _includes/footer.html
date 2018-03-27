@@ -1,30 +1,11 @@
-<footer class="notepad-site-footer">
-    <div class="copyright">
-         <section>&copy; {{ site.time | date: '%Y' }} &bull; <a href="{{ site.url }}/about">{{ site.owner.name }}</a> </section>
-         <section>Proudly published with <a class="icon-ghost" href="https://jekyllrb.com/">Jekyll</a></section>
+<footer class="site-footer">
+	<hr>
+	<div class="copyright">
          <section>
-             Theme by <a class="icon-ghost" href="https://github.com/hmfaysal">Hossain Mohd Faysal</a>
+         	&copy; {{ site.time | date: '%Y' }} &bull; <a href="{{ site.url }}/about">{{ site.owner.name }}黄旺鑫</a>   | 闽ICP备15003538号-2
          </section>
+         <section>Proudly published with <a class="icon-ghost" href="https://jekyllrb.com/">Jekyll</a>.  
+         </section>
+         <!-- Theme modified from <a class="icon-ghost" href="https://github.com/hmfaysal/Notepad">Notepad</a> -->
     </div>
-    <div class="social-icons">
-        
-        {% if site.owner.twitter %}
-        <a href="http://twitter.com/{{ site.owner.twitter }}">
-            <span class="fa-stack fa-lg">
-                <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
-                <i class="fa fa-twitter fa-stack-1x"></i>
-            </span>
-        </a>
-        {% endif %}
-        {% if site.owner.github %}
-        <a href="http://github.com/{{ site.owner.github }}">
-            <span class="fa-stack fa-lg">
-                <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
-                <i class="fa fa-github fa-stack-1x"></i>
-            </span>
-        </a>
-        {% endif %}
-    </div>
-    
-    <div class="cf"></div>
 </footer>
