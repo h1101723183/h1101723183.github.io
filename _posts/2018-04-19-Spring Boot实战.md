@@ -32,10 +32,10 @@ featured: true
 ## 第二章 开发第一个App
 
 1. 创建Spring Boot应用
-![](media/15240327847094/15240339300542.jpg)
+![](http://huangwangxin.com/images/15240327847094/15240339300542.jpg)
 
 2. 添加对应的依赖
-![](media/15240327847094/15240340078853.jpg)
+![](http://huangwangxin.com/images/15240327847094/15240340078853.jpg)
 
 3. 按照步骤，完成创建项目。
 4. 启动引导Spring
